@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Site Blocked - Site Blocker Pro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 20px;
+    }
+    
+    .icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      color: #ff6b6b;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+    
+    .time-info {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 1.1em;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      font-size: 1em;
+    }
+    
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    .icon {
+      animation: pulse 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🚫</div>
+    <h1>Site Blocked</h1>
+    <p>This website is currently blocked according to your Site Blocker Pro settings.</p>
+    
+    <div class="time-info">
+      <div><strong>Current Time:</strong> <span id="currentTime"></span></div>
+      <div><strong>Blocked URL:</strong> <span id="blockedUrl"></span></div>
+    </div>
+    
+    <p>You can modify your blocking settings by clicking the Site Blocker Pro extension icon in your browser toolbar.</p>
+    
+    <button class="btn" id="goBackBtn">Go Back</button>
+    
+    <div class="footer">
+      <p>Site Blocker Pro - Helping you stay focused</p>
+    </div>
+  </div>
+
+  <script src="blocked.js"></script>
+</body>
+</html>
